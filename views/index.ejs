@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SUM Transfer</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container"><br />
+      <h1>SUM Transfer</h1><br />
+      <form action="/send-email" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="receiver">Do kogo:</label>
+            <input type="email" class="form-control" name="receiver">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="sender">Od kogo:</label>
+            <input type="email" class="form-control" name="sender">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="subject">Temat:</label>
+            <input type="text" class="form-control" name="subject">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="pliczek">Od kogo:</label>
+            <input type="file" class="form-control" name="pliczek">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="upfile">Załącznik:</label>
+            <input type="file" class="form-control" name="upfile">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <label for="message">Wiadomość:</label>
+            <input type="text" class="form-control" name="message">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <button type="submit" class="btn btn-success">Wyślij</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

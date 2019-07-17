@@ -1,1 +1,3 @@
-# transfer
+# sumtransfer
+
+Jak to działa?
