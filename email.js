@@ -22,7 +22,7 @@ const transporter = nodeMailer.createTransport({
     }
 })
 
-const create_options_for_sender = ({ receiver, sender, subject, file, message, body }) => {
+const create_options_for_sender = ({ receiver, sender, subject, files, message, body }) => {
     const html = `
         <p> Wiadomość z formularza </p>
         <ul>
@@ -32,6 +32,7 @@ const create_options_for_sender = ({ receiver, sender, subject, file, message, b
         </ul>
         <h3> Wiadomość </h3>
         <p> Wysłałeś plik z wiadomością ${ message} </p>
+        <p> ${files.pliczek.name}
         <p> Pozostała część wiadomości </p>
     `
 
@@ -43,7 +44,7 @@ const create_options_for_sender = ({ receiver, sender, subject, file, message, b
     }
 }
 
-const create_options_for_receiver = ({ receiver, sender, subject, file, message, body }) => {
+const create_options_for_receiver = ({ receiver, sender, subject, files, message, body }) => {
     const html = `
         <p> Wiadomość z formularza </p>
         <ul>
@@ -53,6 +54,7 @@ const create_options_for_receiver = ({ receiver, sender, subject, file, message,
         </ul>
         <h3> Wiadomość </h3>
         <p> Otrzymałeś plik z wiadomością ${ message} </p>
+        <p> ${files.pliczek.name}
         <p> Pozostała część wiadomości </p>
     `
     return {
