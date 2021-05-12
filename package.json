@@ -14,7 +14,7 @@
     "express": "^4.16.4",
     "mongoose": "^5.5.11",
     "multer": "^1.4.1",
-    "nodemailer": "^4.0.1",
+    "nodemailer": "^6.4.16",
     "reload": "^3.0.1"
   },
   "devDependencies": {
